@@ -26,7 +26,7 @@ a {
 
 .HeroGroup {
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 600px;
   padding: 150px 10px;
   text-align: center;
 }
@@ -113,5 +113,38 @@ a {
 @media(max-width: 640px) {
   .Hero .Logos {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+.Cards {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.Cards h2 {
+  margin: 50px 20px;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 700;
+  background: linear-gradient(104deg, #050A27 0%, #4a548c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.CardGroup {
+  margin: 50px 40px 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  justify-items: center;
+}
+
+@media(max-width: 900px) {
+  .CardGroup {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 720px) {
+  .CardGroup {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
